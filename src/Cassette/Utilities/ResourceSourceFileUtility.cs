@@ -67,9 +67,9 @@ namespace Cassette.Utilities
                 for (int i = 2; i < splitResourceName.Length; i++)
                 {
                     var pathPart = string.Join(Path.DirectorySeparatorChar.ToString(CultureInfo.InvariantCulture),
-                                               splitResourceName.Reverse().Skip(i - 1).Reverse());
+                                               splitResourceName.Reverse().Skip(i - 1).Reverse().ToArray());
 
-                    var filePart = "." + string.Join(".", splitResourceName.Skip(splitResourceName.Length - (i - 1)));
+                    var filePart = "." + string.Join(".", splitResourceName.Skip(splitResourceName.Length - (i - 1)).ToArray());
 
                     var periodsToPathSeperatorsName = pathPart + filePart;
 
