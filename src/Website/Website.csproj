@@ -80,6 +80,9 @@
     <Content Include="assets\scripts\disqus\disqus.js" />
     <Content Include="assets\scripts\jquery\jquery.js" />
     <Content Include="assets\scripts\home\tweets.js" />
+    <EmbeddedResource Include="assets\scripts\plugin\script3.js" />
+    <EmbeddedResource Include="assets\scripts\plugin\script2.js" />
+    <EmbeddedResource Include="assets\scripts\plugin\script1.js" />
     <Content Include="assets\styles\buttons.css" />
     <Content Include="assets\styles\code.css" />
     <Content Include="assets\styles\documentation.css" />

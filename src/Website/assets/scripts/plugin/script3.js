@@ -1,0 +1,1 @@
+﻿alert('script #3');

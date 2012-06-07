@@ -181,6 +181,8 @@
     <Compile Include="NullPlaceholderTracker.cs" />
     <Compile Include="PlaceholderTracker.cs" />
     <Compile Include="ReferenceBuilder.cs" />
+    <Compile Include="ResourceAsset.cs" />
+    <Compile Include="ResourceFile.cs" />
     <Compile Include="Scripts\AssignScriptRenderer.cs" />
     <Compile Include="Scripts\DebugScriptBundleHtmlRenderer.cs" />
     <Compile Include="Scripts\Manifests\ExternalScriptBundleManifest.cs" />
@@ -272,6 +274,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Condition="'$(TargetFrameworkVersion)' == 'v3.5'" Include="Utilities\Lazy.cs" />
     <Compile Include="Utilities\PathUtilities.cs" />
+    <Compile Include="Utilities\ResourceSourceFileUtility.cs" />
     <Compile Include="Utilities\StreamExtensions.cs" />
     <Compile Include="Utilities\StringExtensions.cs" />
     <Compile Include="VirtualDirectoryPrepender.cs" />

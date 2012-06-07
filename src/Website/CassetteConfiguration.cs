@@ -1,4 +1,5 @@
-﻿using Cassette.Configuration;
+﻿using Cassette;
+using Cassette.Configuration;
 using Cassette.Scripts;
 using Cassette.Stylesheets;
 
@@ -20,6 +21,14 @@ namespace Website
                     Path =  "assets/scripts/jquery"
                 }
             );
+
+            var pluginScripts = new ScriptBundle("plugin/scripts");
+            pluginScripts.Processor = new ScriptPipeline();
+            pluginScripts.Assets.Add(new ResourceAsset("assets/scripts/plugin/script1.js", GetType().Assembly, pluginScripts));
+            pluginScripts.Assets.Add(new ResourceAsset("assets/scripts/plugin/script2.js", GetType().Assembly, pluginScripts));
+            pluginScripts.Assets.Add(new ResourceAsset("assets/scripts/plugin/script3.js", GetType().Assembly, pluginScripts));
+            
+            bundles.Add(pluginScripts);
         }
     }
 }
